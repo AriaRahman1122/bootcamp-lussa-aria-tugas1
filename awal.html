@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aria BootCamp</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <style>
+      body {
+        background-color: lightgray;
+        min-height: 2000px;
+      }
+      .tengah {
+        text-align: center;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        grid-gap: 0px;
+        padding: 0px;
+      }
+
+      .form {
+        border-radius: 5px;
+      }
+
+      .oke {
+        width: 285px;
+        font-size: larger;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 8px;
+        background-color: aqua;
+      }
+
+      .oke2 {
+        width: 140px;
+        font-size: larger;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        border-radius: 8px;
+        background-color: aqua;
+      }
+
+      #submit1:hover {
+        background-color: rgb(23, 156, 156);
+      }
+      .oke2:hover {
+        background-color: rgb(23, 156, 156);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Halaman Awal -->
+    <div id="awal">
+      <h1 class="tengah">Selamat Datang Di Aria BootCamp</h1>
+      <br />
+      <p class="tengah">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eaque distinctio vitae! Hic nesciunt illum eaque voluptatibus, totam nobis rem.</p>
+      <br />
+      <h3 class="tengah">Buat akun mu terlebih dahulu</h3>
+      <br />
+
+      <!-- Form Login -->
+      <div id="daftar">
+        <center>
+          <button type="submit" id="lewat">Lewati</button>
+          <br />
+          <br />
+          <fieldset style="width: 500px">
+            <legend>Aria_BootCamp</legend>
+            <form action="">
+              <table>
+                <tr>
+                  <td>Username</td>
+                  <td>&ensp;:&ensp;</td>
+                  <td><input id="nama" class="form" type="text" placeholder="&#xf2bd; Masukan User Id" style="font-family: Arial, FontAwesome" minlength="8" maxlength="20" /></td>
+                </tr>
+                <tr>
+                  <td>Email</td>
+                  <td>&ensp;:&ensp;</td>
+                  <td><input id="email" class="form" type="email" placeholder="&#xf0e0; Masukan Email Anda" style="font-family: Arial, FontAwesome" /></td>
+                </tr>
+                <tr>
+                  <td>Telepon/Hp</td>
+                  <td>&ensp;:&ensp;</td>
+                  <td>
+                    <input id="telepon" type="text" class="form" onkeypress="return event.charCode >= 48 && event.charCode <=57" maxlength="13" placeholder="&#xf2b9; Masukan Email Anda" style="font-family: Arial, FontAwesome" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tahun Lahir</td>
+                  <td>&ensp;:&ensp;</td>
+                  <td>
+                    <input id="lahir" class="form" type="number" placeholder="&#xf073; Masukan Tahun Lahir" style="font-family: Arial, FontAwesome" />
+                  </td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                  <td colspan="3"><button class="oke" id="submit1" type="submit">Lanjut</button></td>
+                </tr>
+              </table>
+            </form>
+          </fieldset>
+        </center>
+      </div>
+
+      <!-- Daftar Password -->
+      <div id="daftar2">
+        <center>
+          <fieldset style="width: 500px">
+            <legend>Aria_BootCamp</legend>
+            <form action="">
+              <table>
+                <tr>
+                  <td>Password</td>
+                  <td>&ensp;:&ensp;</td>
+                  <td><input id="pass" class="form" type="password" minlength="8" placeholder="&#xf084; Semua Karakter, min.8" style="font-family: Arial, FontAwesome" /></td>
+                </tr>
+                <tr>
+                  <td>Re-Password</td>
+                  <td>&ensp;:&ensp;</td>
+                  <td><input id="pass2" class="form" type="password" minlength="8" placeholder="&#xf084; Semua Karakter, min.8" style="font-family: Arial, FontAwesome" /></td>
+                </tr>
+              </table>
+            </form>
+            <br />
+            <button class="oke2" id="submit2" type="submit">Submit</button>
+            <button class="oke2" id="back" type="submit">Kembali</button>
+          </fieldset>
+        </center>
+      </div>
+    </div>
+
+    <!-- Halaman Kedua -->
+    <div id="page2">
+      <h1 class="tengah">Selamat Datang Di Home Page Kami</h1>
+      <h3 class="tengah">- Maju Bersama Hebat Semua -</h3>
+      <br />
+      <!-- Data Profil -->
+      <div class="grid-container">
+        <div>
+          <table style="width: 300px">
+            <tr>
+              <td>Nama</td>
+              <td>&ensp;:&ensp;</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>&ensp;:&ensp;</td>
+              <td>-</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table style="width: 300px">
+            <tr>
+              <td>Telepon/HP</td>
+              <td>&ensp;:&ensp;</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>Tahun Lahir</td>
+              <td>&ensp;:&ensp;</td>
+              <td>-</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <p class="tengah">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptas distinctio rerum laudantium. Delectus consequuntur provident iste veniam voluptas perspiciatis. Esse deserunt amet delectus corporis consequatur maxime magnam,
+        pariatur aliquid eligendi praesentium, repellat deleniti totam facilis labore. Perspiciatis, totam obcaecati atque minus facere quis aspernatur quidem voluptate error eveniet quaerat reprehenderit sequi tenetur id optio mollitia
+        dolore iste quod qui vel consequuntur, ipsum at exercitationem perferendis? Aliquam, nobis minima et quisquam nulla, vel impedit molestiae laudantium nisi autem maiores recusandae iusto veniam hic illum tempora error facilis at id
+        consequuntur tenetur officiis est! Inventore nesciunt nobis, provident dolorem accusantium aperiam.
+      </p>
+      <hr />
+      <hr />
+      <br />
+      <!-- Daftar Harga -->
+      <div id="harga">
+        <center>
+          <h2>Daftar Harga BootCamp</h2>
+          <h4>Harga Untuk Selama 3 Bulan Pembelajaran</h4>
+          <table border="2" class="tengah" style="width: 400px">
+            <tr>
+              <th>No</th>
+              <th>Nama Paket</th>
+              <th>Pertemuan/perminggu</th>
+              <th>Harga</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Lowa</td>
+              <td>1</td>
+              <td>300K</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Ula</td>
+              <td>2</td>
+              <td>380K</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Usi</td>
+              <td>3</td>
+              <td>400K</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Ajax</td>
+              <td>4</td>
+              <td>410</td>
+            </tr>
+          </table>
+        </center>
+      </div>
+      <br /><br />
+
+      <!-- Lokasi -->
+      <center>
+        <h2>Lokasi</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.0075452842899!2d107.4665388291942!3d-6.517863667268629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22980067fb41b235!2zNsKwMzEnMDQuMyJTIDEwN8KwMjgnMDEuNSJF!5e0!3m2!1sen!2sid!4v1661542348656!5m2!1sen!2sid"
+          width="600"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </center>
+    </div>
+
+    <!-- Single Page.............................................. -->
+    <script>
+      $(document).ready(function () {
+        $("#daftar2").hide();
+        $("#page2").hide();
+
+        $("#lewat").click(function () {
+          $("#awal").hide();
+          $("#page2").show();
+        });
+
+        $("#submit1").click(function (lanjut) {
+          lanjut.preventDefault();
+          $("#daftar").hide();
+          $("#daftar2").show();
+        });
+
+        // Logika apabila password dan re-password berbeda........................
+        document.getElementById("submit2").onclick = run;
+        function run() {
+          var pass = document.getElementById("pass").value;
+          var nama = document.getElementById("nama").value;
+          var email = document.getElementById("email").value;
+          var telepon = document.getElementById("telepon").value;
+          var lahir = document.getElementById("lahir").value;
+          var pass2 = document.getElementById("pass2").value;
+
+          if (pass != pass2) {
+            alert("Password dan Re-Password Tidak Sama");
+          } else if (pass == "" || nama == "" || email == "" || telepon == "" || lahir == "") {
+            alert("Pastikan tidak ada kolom yang kosong!!!");
+          } else {
+            $("#awal").hide();
+            $("#page2").show();
+          }
+        }
+
+        $("#back").click(function () {
+          $("#daftar2").hide();
+          $("#daftar").show();
+        });
+      });
+    </script>
+  </body>
+</html>
